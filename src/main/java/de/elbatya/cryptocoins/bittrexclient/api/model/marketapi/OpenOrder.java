@@ -1,7 +1,5 @@
 package de.elbatya.cryptocoins.bittrexclient.api.model.marketapi;
 
-import javafx.beans.binding.BooleanExpression;
-
 import java.time.LocalDateTime;
 
 /**
