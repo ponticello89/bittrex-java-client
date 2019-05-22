@@ -7,112 +7,120 @@ import java.time.LocalDateTime;
  */
 public class Market {
 
-    private String marketCurrency;
-    private String marketCurrencyLong;
+	private String marketCurrency;
+	private String marketCurrencyLong;
 
-    private String baseCurrency;
-    private String baseCurrencyLong;
+	private String baseCurrency;
+	private String baseCurrencyLong;
 
-    private Double minTradeSize;
+	private Double minTradeSize;
 
-    private String marketName;
+	private String marketName;
 
-    private Boolean isActive;
+	private Boolean isActive;
+	private Boolean IsRestricted;
 
-    private LocalDateTime created;
+	private LocalDateTime created;
 
-    private String notice;
+	private String notice;
 
-    private Boolean isSponsored;
+	private Boolean isSponsored;
 
-    private String logoUrl;
+	private String logoUrl;
 
+	public String getMarketCurrency() {
+		return marketCurrency;
+	}
 
-    public String getMarketCurrency() {
-        return marketCurrency;
-    }
+	public void setMarketCurrency(String marketCurrency) {
+		this.marketCurrency = marketCurrency;
+	}
 
-    public void setMarketCurrency(String marketCurrency) {
-        this.marketCurrency = marketCurrency;
-    }
+	public String getMarketCurrencyLong() {
+		return marketCurrencyLong;
+	}
 
-    public String getMarketCurrencyLong() {
-        return marketCurrencyLong;
-    }
+	public void setMarketCurrencyLong(String marketCurrencyLong) {
+		this.marketCurrencyLong = marketCurrencyLong;
+	}
 
-    public void setMarketCurrencyLong(String marketCurrencyLong) {
-        this.marketCurrencyLong = marketCurrencyLong;
-    }
+	public String getBaseCurrency() {
+		return baseCurrency;
+	}
 
-    public String getBaseCurrency() {
-        return baseCurrency;
-    }
+	public void setBaseCurrency(String baseCurrency) {
+		this.baseCurrency = baseCurrency;
+	}
 
-    public void setBaseCurrency(String baseCurrency) {
-        this.baseCurrency = baseCurrency;
-    }
+	public String getBaseCurrencyLong() {
+		return baseCurrencyLong;
+	}
 
-    public String getBaseCurrencyLong() {
-        return baseCurrencyLong;
-    }
+	public void setBaseCurrencyLong(String baseCurrencyLong) {
+		this.baseCurrencyLong = baseCurrencyLong;
+	}
 
-    public void setBaseCurrencyLong(String baseCurrencyLong) {
-        this.baseCurrencyLong = baseCurrencyLong;
-    }
+	public Double getMinTradeSize() {
+		return minTradeSize;
+	}
 
-    public Double getMinTradeSize() {
-        return minTradeSize;
-    }
+	public void setMinTradeSize(Double minTradeSize) {
+		this.minTradeSize = minTradeSize;
+	}
 
-    public void setMinTradeSize(Double minTradeSize) {
-        this.minTradeSize = minTradeSize;
-    }
+	public String getMarketName() {
+		return marketName;
+	}
 
-    public String getMarketName() {
-        return marketName;
-    }
+	public void setMarketName(String marketName) {
+		this.marketName = marketName;
+	}
 
-    public void setMarketName(String marketName) {
-        this.marketName = marketName;
-    }
+	public Boolean getIsActive() {
+		return isActive;
+	}
 
-    public Boolean getIsActive() {
-        return isActive;
-    }
+	public void setIsActive(Boolean active) {
+		isActive = active;
+	}
 
-    public void setIsActive(Boolean active) {
-        isActive = active;
-    }
+	public Boolean getIsRestricted() {
+		return IsRestricted;
+	}
 
-    public LocalDateTime getCreated() {
-        return created;
-    }
+	public void setIsRestricted(Boolean restricted) {
+		IsRestricted = restricted;
+	}
 
-    public void setCreated(LocalDateTime created) {
-        this.created = created;
-    }
+	public LocalDateTime getCreated() {
+		return created;
+	}
 
-    public String getNotice() {
-        return notice;
-    }
+	public void setCreated(LocalDateTime created) {
+		this.created = created;
+	}
 
-    public void setNotice(String notice) {
-        this.notice = notice;
-    }
+	public String getNotice() {
+		return notice;
+	}
 
-    public Boolean getIsSponsored() {
-        return isSponsored;
-    }
+	public void setNotice(String notice) {
+		this.notice = notice;
+	}
 
-    public void setIsSponsored(Boolean sponsored) {
-        isSponsored = sponsored;
-    }
+	public Boolean getIsSponsored() {
+		return isSponsored;
+	}
 
-    public String getLogoUrl() {
-        return logoUrl;
-    }
+	public void setIsSponsored(Boolean sponsored) {
+		isSponsored = sponsored;
+	}
 
-    public void setLogoUrl(String logoUrl) {
-        this.logoUrl = logoUrl;
-    }
+	public String getLogoUrl() {
+		return logoUrl;
+	}
+
+	public void setLogoUrl(String logoUrl) {
+		this.logoUrl = logoUrl;
+	}
 }

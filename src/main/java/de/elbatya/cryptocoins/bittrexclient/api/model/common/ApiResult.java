@@ -6,40 +6,49 @@ import java.util.Optional;
  * @author contact@elbatya.de
  */
 public class ApiResult<T> {
-    private boolean success;
-    private String message;
-    private T result;
+	private boolean success;
+	private String message;
+	private T result;
+	private String explanation;
 
-    public boolean isSuccess() {
-        return success;
-    }
+	public boolean isSuccess() {
+		return success;
+	}
 
-    public void setSuccess(boolean success) {
-        this.success = success;
-    }
+	public void setSuccess(boolean success) {
+		this.success = success;
+	}
 
-    public String getMessage() {
-        return message;
-    }
+	public String getMessage() {
+		return message;
+	}
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+	public void setMessage(String message) {
+		this.message = message;
+	}
 
-    public T getResult() {
-        return result;
-    }
+	public T getResult() {
+		return result;
+	}
 
-    public Optional<T> getResultAsOptional() {
-        return Optional.ofNullable(result);
-    }
+	public Optional<T> getResultAsOptional() {
+		return Optional.ofNullable(result);
+	}
 
-    public T unwrap() throws BittrexApiException {
-        if (result == null) {
-            String errorMessage = String.format("Message from Bittrex server: %s", this.message);
-            throw new BittrexApiException(errorMessage);
-        }
-        return result;
-    }
+	public T unwrap() throws BittrexApiException {
+		if (result == null) {
+			String errorMessage = String.format("Message from Bittrex server: %s", this.message);
+			throw new BittrexApiException(errorMessage);
+		}
+		return result;
+	}
+
+	public String getExplanation() {
+		return explanation;
+	}
+
+	public void setExplanation(String explanation) {
+		this.explanation = explanation;
+	}
 
 }
